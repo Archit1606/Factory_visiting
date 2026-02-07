@@ -3,3 +3,5 @@ C:\Users\Archit\OneDrive\Desktop\factory_visit_website\backend\src\main\java\com
 C:\Users\Archit\OneDrive\Desktop\factory_visit_website\backend\src\main\java\com\factoryvisit\dto\VisitorRegistrationRequest.java
 C:\Users\Archit\OneDrive\Desktop\factory_visit_website\backend\src\main\java\com\factoryvisit\dto\VisitorRegistrationResponse.java
 C:\Users\Archit\OneDrive\Desktop\factory_visit_website\backend\src\main\java\com\factoryvisit\FactoryVisitApplication.java
+C:\Users\Archit\OneDrive\Desktop\factory_visit_website\backend\src\main\java\com\factoryvisit\service\EmailService.java
+C:\Users\Archit\OneDrive\Desktop\factory_visit_website\backend\src\main\java\com\factoryvisit\service\QrCodeService.java

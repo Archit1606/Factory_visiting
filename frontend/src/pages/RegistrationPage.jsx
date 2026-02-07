@@ -70,14 +70,21 @@ const RegistrationPage = () => {
 
     setIsSubmitting(true);
     try {
-      await api.post("/api/visitors/register", {
+      const response = await api.post("/api/visitors/register", {
         fullName: formData.fullName.trim(),
         email: formData.email.trim(),
         phone: formData.phone.trim(),
         companyName: formData.company.trim(),
         purposeOfVisit: formData.purpose.trim()
       });
-      navigate("/success");
+      navigate("/success", {
+        state: {
+          qrCodeBase64: response?.data?.qrCodeBase64 || "",
+          message: response?.data?.message || "Registration complete.",
+          emailSent: response?.data?.emailSent || false,
+          email: formData.email.trim()
+        }
+      });
     } catch (error) {
       setSubmitError(
         error?.response?.data?.message ||
